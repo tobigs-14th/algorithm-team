@@ -13,6 +13,6 @@ for i in range(1,max_lenght+1):
             cut_count = n
 
         cost += n*i*F - cut_count*C
-    earn_list.append(cost)
+    earn_list.append(cost) #길이별 가격을 리스트에 추가
 
-print(max(earn_list))
+print(max(earn_list)) #가장 큰 값을 출력
