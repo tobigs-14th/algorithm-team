@@ -21,6 +21,8 @@ def big_square(start, end):
         new_mid = min(hist[midl:midr+1]) * width
 
         if mid > new_mid:
+            midl += 1
+            width -= 1
             break
 
         mid = new_mid
@@ -34,6 +36,8 @@ def big_square(start, end):
         new_mid = min(hist[midl:midr+1]) * width
 
         if mid > new_mid:
+            midr -= 1
+            width -= 2
             break
 
         mid = new_mid
